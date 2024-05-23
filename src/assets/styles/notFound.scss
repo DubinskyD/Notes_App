@@ -1,0 +1,25 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+.not-found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 450px;
+    height: 30vh;
+    margin: 20px auto;
+    border-radius: 16px;
+    background: url("../noteBG.jpeg") 0 0/100% 100% no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include box-shadow(10px 11px 66px 22px rgba(0, 0, 0, 0.52));
+
+    p {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+    }
+}
